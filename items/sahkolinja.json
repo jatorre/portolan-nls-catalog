@@ -1,0 +1,101 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "id": "sahkolinja",
+  "bbox": [
+    15.0537852,
+    58.6074565,
+    33.9935374,
+    70.2641566
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          15.0537852,
+          58.6074565
+        ],
+        [
+          33.9935374,
+          58.6074565
+        ],
+        [
+          33.9935374,
+          70.2641566
+        ],
+        [
+          15.0537852,
+          70.2641566
+        ],
+        [
+          15.0537852,
+          58.6074565
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "title": "Electricity transmission lines",
+    "description": "High-voltage overhead power lines (NLS Topographic Database).",
+    "keywords": [
+      "electricity transmission",
+      "power grid",
+      "energy infrastructure"
+    ],
+    "crs": "OGC:CRS84",
+    "materialized": true,
+    "provider": "National Land Survey of Finland",
+    "license": "CC-BY-4.0",
+    "datetime": null,
+    "semantics": {
+      "spec": "Open Semantic Interchange",
+      "label": "Electricity transmission lines",
+      "describes": "High-voltage overhead power lines (NLS Topographic Database).",
+      "answers": "distance to electricity transmission lines",
+      "unit": "metres"
+    }
+  },
+  "assets": {
+    "data": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v2/power_lines/metadata/v1.metadata.json",
+      "type": "application/vnd.apache.iceberg+json",
+      "roles": [
+        "data"
+      ],
+      "title": "Apache Iceberg table v2.power_lines — iceberg_scan() or ATTACH the catalog endpoint",
+      "portolan:access": "iceberg_scan",
+      "portolan:iceberg_table": "v2.power_lines",
+      "portolan:iceberg_endpoint": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog"
+    },
+    "data_native": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v3/power_lines/metadata/v1.metadata.json",
+      "type": "application/vnd.apache.iceberg+json",
+      "roles": [
+        "data"
+      ],
+      "title": "Apache Iceberg table v3.power_lines — iceberg_scan() or ATTACH the catalog endpoint",
+      "portolan:access": "iceberg_scan",
+      "portolan:iceberg_table": "v3.power_lines",
+      "portolan:iceberg_endpoint": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog"
+    }
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/sahkolinja.json",
+      "type": "application/geo+json",
+      "title": "Same record as OGC API - Records"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "nls",
+  "type": "Catalog",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core"
+  ],
+  "title": "🇫🇮 National Land Survey of Finland (Maanmittauslaitos) (OGC API - Records catalogue)",
+  "description": "OGC API - Records view of this Portolan catalogue (same GeoJSON model as the STAC view).",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "alternate",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/catalog.json",
+      "type": "application/json",
+      "title": "Same catalogue as a STAC Catalog"
+    },
+    {
+      "rel": "items",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/jarvi.json",
+      "type": "application/geo+json",
+      "title": "Lakes & water bodies"
+    },
+    {
+      "rel": "items",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/korkeusmalli_2m.json",
+      "type": "application/geo+json",
+      "title": "Elevation model — 2 m laser DEM"
+    },
+    {
+      "rel": "items",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/luonnonsuojelualue.json",
+      "type": "application/geo+json",
+      "title": "Protected nature areas"
+    },
+    {
+      "rel": "items",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/rakennus.json",
+      "type": "application/geo+json",
+      "title": "Buildings"
+    },
+    {
+      "rel": "items",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/sahkolinja.json",
+      "type": "application/geo+json",
+      "title": "Electricity transmission lines"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "sahkolinja",
+  "title": "Electricity transmission lines",
+  "description": "High-voltage overhead power lines (NLS Topographic Database).",
+  "keywords": [
+    "electricity transmission",
+    "power grid",
+    "energy infrastructure"
+  ],
+  "bbox": [
+    15.0537852,
+    58.6074565,
+    33.9935374,
+    70.2641566
+  ],
+  "license": "CC-BY-4.0",
+  "provider": "National Land Survey of Finland",
+  "semantics": {
+    "spec": "Open Semantic Interchange",
+    "label": "Electricity transmission lines",
+    "describes": "High-voltage overhead power lines (NLS Topographic Database).",
+    "answers": "distance to electricity transmission lines",
+    "unit": "metres"
+  },
+  "representation": "iceberg",
+  "tables": [
+    "v2.power_lines",
+    "v3.power_lines"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "luonnonsuojelualue",
+  "type": "Feature",
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-records-1/1.0/conf/record-core"
+  ],
+  "time": null,
+  "bbox": [
+    15.0537852,
+    58.6074565,
+    33.9935374,
+    70.2641566
+  ],
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          15.0537852,
+          58.6074565
+        ],
+        [
+          33.9935374,
+          58.6074565
+        ],
+        [
+          33.9935374,
+          70.2641566
+        ],
+        [
+          15.0537852,
+          70.2641566
+        ],
+        [
+          15.0537852,
+          58.6074565
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "type": "dataset",
+    "title": "Protected nature areas",
+    "description": "Statutory nature-protection areas (NLS).",
+    "keywords": [
+      "protected areas",
+      "nature conservation",
+      "environment"
+    ],
+    "contacts": [
+      {
+        "name": "National Land Survey of Finland",
+        "roles": [
+          "provider"
+        ]
+      }
+    ],
+    "license": "CC-BY-4.0",
+    "themes": [
+      {
+        "scheme": "https://opensemanticinterchange.org",
+        "concepts": [
+          {
+            "id": "distance to protected areas"
+          }
+        ]
+      }
+    ],
+    "portolan:iceberg_endpoint": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog",
+    "portolan:iceberg_table": "v2.protected"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "self",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/luonnonsuojelualue.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v2/protected/metadata/v1.metadata.json",
+      "type": "application/vnd.apache.iceberg+json",
+      "title": "Apache Iceberg table v2.protected — iceberg_scan() or ATTACH the catalog endpoint"
+    },
+    {
+      "rel": "item",
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v3/protected/metadata/v1.metadata.json",
+      "type": "application/vnd.apache.iceberg+json",
+      "title": "Apache Iceberg table v3.protected — iceberg_scan() or ATTACH the catalog endpoint"
+    }
+  ]
+}
