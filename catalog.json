@@ -1,85 +1,60 @@
 {
   "type": "Catalog",
-  "stac_version": "1.0.0",
-  "id": "nls",
-  "title": "🇫🇮 National Land Survey of Finland (Maanmittauslaitos) (Portolan catalog)",
-  "description": "A Portolan catalog: git-sourced STAC + Apache Iceberg metadata, published to object storage as a static Iceberg REST catalog (ATTACH) + STAC + OGC API - Records + direct download. Data from National Land Survey of Finland (Maanmittauslaitos).",
-  "portolan:catalog_type": "iceberg-rest-static",
-  "portolan:iceberg_endpoint": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog",
-  "portolan:datasets": 5,
-  "portolan:contributions": {
-    "via": "github",
-    "repo": "https://github.com/jatorre/portolan-nls-catalog",
-    "issues_url": "https://github.com/jatorre/portolan-nls-catalog/issues",
-    "accepts": [
-      "issue",
-      "pull_request"
-    ]
-  },
+  "id": "mig-nls",
+  "stac_version": "1.1.0",
+  "description": "Official topographic and elevation data published as a git-backed Portolan catalog.",
   "links": [
     {
       "rel": "root",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "self",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/catalog.json",
-      "type": "application/json"
-    },
-    {
-      "rel": "alternate",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/records/catalog.json",
+      "href": "./catalog.json",
       "type": "application/json",
-      "title": "Same catalogue as OGC API - Records"
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
     },
     {
-      "rel": "feedback",
+      "rel": "child",
+      "href": "./jarvi/collection.json"
+    },
+    {
+      "rel": "child",
+      "href": "./luonnonsuojelualue/collection.json"
+    },
+    {
+      "rel": "child",
+      "href": "./rakennus/collection.json"
+    },
+    {
+      "rel": "child",
+      "href": "./sahkolinja/collection.json"
+    },
+    {
+      "rel": "child",
+      "href": "./korkeusmalli_2m/collection.json"
+    },
+    {
+      "rel": "vcs",
+      "href": "https://github.com/jatorre/portolan-nls-catalog",
+      "type": "text/html",
+      "title": "Source repository"
+    },
+    {
+      "rel": "issues",
       "href": "https://github.com/jatorre/portolan-nls-catalog/issues",
       "type": "text/html",
-      "title": "Report issues or contribute data"
+      "title": "Report issues / request data"
     },
     {
-      "rel": "item",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/items/jarvi.json",
-      "type": "application/geo+json",
-      "title": "Lakes & water bodies"
-    },
-    {
-      "rel": "item",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/items/korkeusmalli_2m.json",
-      "type": "application/geo+json",
-      "title": "Elevation model — 2 m laser DEM"
-    },
-    {
-      "rel": "item",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/items/luonnonsuojelualue.json",
-      "type": "application/geo+json",
-      "title": "Protected nature areas"
-    },
-    {
-      "rel": "item",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/items/rakennus.json",
-      "type": "application/geo+json",
-      "title": "Buildings"
-    },
-    {
-      "rel": "item",
-      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/items/sahkolinja.json",
-      "type": "application/geo+json",
-      "title": "Electricity transmission lines"
+      "rel": "monitor",
+      "href": "https://github.com/jatorre/portolan-nls-catalog/commits/main.atom",
+      "type": "application/atom+xml",
+      "title": "Change feed"
     }
   ],
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          15.0537852,
-          58.6074565,
-          33.9935374,
-          70.2641566
-        ]
-      ]
-    }
-  }
+  "title": "National Land Survey of Finland (Maanmittauslaitos)",
+  "stac_extensions": [
+    "https://portolan-sdi.github.io/git-backed-catalog/v1.0.0/schema.json"
+  ],
+  "git:repository": "https://github.com/jatorre/portolan-nls-catalog",
+  "git:ref": "main",
+  "git:provider": "github",
+  "git:sovereign": false
 }

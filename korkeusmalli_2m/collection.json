@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "korkeusmalli_2m",
+  "stac_version": "1.1.0",
+  "description": "NLS 2 m laser-scanned terrain elevation.",
+  "title": "Elevation model \u2014 2 m laser DEM",
+  "keywords": [
+    "elevation",
+    "terrain",
+    "slope",
+    "digital elevation model"
+  ],
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.maanmittauslaitos.fi/",
+      "type": "text/html",
+      "title": "National Land Survey of Finland (Maanmittauslaitos) (source)"
+    }
+  ],
+  "stac_extensions": [],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          24.62,
+          60.21,
+          24.76,
+          60.27
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "assets": {
+    "data": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/catalog/data/raster/dem_2m.parquet",
+      "type": "application/x-raquet",
+      "roles": [
+        "data"
+      ],
+      "title": "Raquet raster \u2014 read_raquet()"
+    }
+  },
+  "git:edit_url": "https://github.com/jatorre/portolan-nls-catalog/edit/main/korkeusmalli_2m/collection.json"
+}

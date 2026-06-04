@@ -1,0 +1,137 @@
+{
+  "type": "Collection",
+  "id": "rakennus",
+  "stac_version": "1.1.0",
+  "description": "NLS building footprints.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.maanmittauslaitos.fi/",
+      "type": "text/html",
+      "title": "National Land Survey of Finland (Maanmittauslaitos) (source)"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://portolan-sdi.github.io/stac-iceberg-extension/v1.0.0/schema.json"
+  ],
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 1965,
+  "table:row_count": 1965,
+  "table:primary_geometry": "geom",
+  "table:columns": [
+    {
+      "name": "mtk_id",
+      "type": "int64"
+    },
+    {
+      "name": "sijaintitarkkuus",
+      "type": "int32"
+    },
+    {
+      "name": "aineistolahde",
+      "type": "int32"
+    },
+    {
+      "name": "alkupvm",
+      "type": "string"
+    },
+    {
+      "name": "kohderyhma",
+      "type": "int32"
+    },
+    {
+      "name": "kohdeluokka",
+      "type": "int32"
+    },
+    {
+      "name": "korkeustarkkuus",
+      "type": "int32"
+    },
+    {
+      "name": "kayttotarkoitus",
+      "type": "int32"
+    },
+    {
+      "name": "kerrosluku",
+      "type": "int32"
+    },
+    {
+      "name": "pohjankorkeus",
+      "type": "int32"
+    },
+    {
+      "name": "korkeusarvo",
+      "type": "string"
+    },
+    {
+      "name": "sijainti_piste",
+      "type": "string"
+    },
+    {
+      "name": "geom",
+      "type": "binary"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          24.6597115,
+          60.2247338,
+          24.71583,
+          60.2519998
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "assets": {
+    "rakennus": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/rakennus/rakennus.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "iceberg": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v3/buildings",
+      "type": "application/x-iceberg",
+      "roles": [
+        "data"
+      ],
+      "title": "Apache Iceberg table v3.buildings \u2014 iceberg_scan() or ATTACH the catalog_uri"
+    }
+  },
+  "title": "Buildings",
+  "keywords": [
+    "buildings",
+    "building footprints",
+    "built environment"
+  ],
+  "git:edit_url": "https://github.com/jatorre/portolan-nls-catalog/edit/main/rakennus/collection.json",
+  "iceberg:catalog_type": "rest",
+  "iceberg:catalog_uri": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog",
+  "iceberg:table_id": "v3.buildings",
+  "iceberg:current_snapshot_id": 1780392386526
+}

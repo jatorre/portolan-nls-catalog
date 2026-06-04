@@ -1,0 +1,15 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-06-04T08:28:10.369078Z",
+      "breaking": false,
+      "assets": {},
+      "changes": [
+        "korkeusmalli_2m (raquet raster, remote)"
+      ]
+    }
+  ]
+}

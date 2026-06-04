@@ -1,0 +1,22 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-06-04T08:27:15.357502Z",
+      "breaking": false,
+      "assets": {
+        "rakennus.parquet": {
+          "sha256": "ca6d5731942364aaf2afc5106fb9ca96e34fe4b82da3e93f18baedf9bf412346",
+          "size_bytes": 256735,
+          "href": "rakennus/rakennus.parquet",
+          "mtime": 1780561619.8506322
+        }
+      },
+      "changes": [
+        "rakennus.parquet"
+      ]
+    }
+  ]
+}

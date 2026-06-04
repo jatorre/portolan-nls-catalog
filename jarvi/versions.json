@@ -1,0 +1,22 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-06-04T08:27:14.108088Z",
+      "breaking": false,
+      "assets": {
+        "jarvi.parquet": {
+          "sha256": "e9e2654243d592a914672479842f11442177c7fe42adfa6def6601a258f19000",
+          "size_bytes": 1628660,
+          "href": "jarvi/jarvi.parquet",
+          "mtime": 1780561619.0089922
+        }
+      },
+      "changes": [
+        "jarvi.parquet"
+      ]
+    }
+  ]
+}

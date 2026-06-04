@@ -1,0 +1,22 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-06-04T08:27:14.725418Z",
+      "breaking": false,
+      "assets": {
+        "luonnonsuojelualue.parquet": {
+          "sha256": "8a4e01cda22c668b83c08be00b1249ad464e9a40731f8f8a6d01675b1cb8b031",
+          "size_bytes": 285976,
+          "href": "luonnonsuojelualue/luonnonsuojelualue.parquet",
+          "mtime": 1780561619.3640258
+        }
+      },
+      "changes": [
+        "luonnonsuojelualue.parquet"
+      ]
+    }
+  ]
+}

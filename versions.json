@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "mig-nls",
+  "created": "2026-06-04T08:27:13.522465+00:00",
+  "collections": {
+    "jarvi": {
+      "current_version": "1.0.0",
+      "updated": "2026-06-04T08:27:14.108387+00:00",
+      "asset_count": 1,
+      "total_size_bytes": 1628660
+    },
+    "luonnonsuojelualue": {
+      "current_version": "1.0.0",
+      "updated": "2026-06-04T08:27:14.725709+00:00",
+      "asset_count": 1,
+      "total_size_bytes": 285976
+    },
+    "rakennus": {
+      "current_version": "1.0.0",
+      "updated": "2026-06-04T08:27:15.357793+00:00",
+      "asset_count": 1,
+      "total_size_bytes": 256735
+    },
+    "sahkolinja": {
+      "current_version": "1.0.0",
+      "updated": "2026-06-04T08:27:15.992300+00:00",
+      "asset_count": 1,
+      "total_size_bytes": 37173
+    },
+    "korkeusmalli_2m": {
+      "current_version": "1.0.0",
+      "updated": "2026-06-04T08:28:10.369078Z",
+      "asset_count": 0,
+      "total_size_bytes": 0
+    }
+  },
+  "updated": "2026-06-04T08:28:10.369078Z"
+}

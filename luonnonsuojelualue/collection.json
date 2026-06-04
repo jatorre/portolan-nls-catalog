@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "luonnonsuojelualue",
+  "stac_version": "1.1.0",
+  "description": "Statutory nature-protection areas (NLS).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "National Land Survey of Finland (Maanmittauslaitos)"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.maanmittauslaitos.fi/",
+      "type": "text/html",
+      "title": "National Land Survey of Finland (Maanmittauslaitos) (source)"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://portolan-sdi.github.io/stac-iceberg-extension/v1.0.0/schema.json"
+  ],
+  "geoparquet:geometry_type": "Polygon",
+  "geoparquet:feature_count": 176,
+  "table:row_count": 176,
+  "table:primary_geometry": "geom",
+  "table:columns": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "kohderyhma",
+      "type": "int32"
+    },
+    {
+      "name": "kohdeluokka",
+      "type": "int32"
+    },
+    {
+      "name": "geom",
+      "type": "binary"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          24.4483725,
+          60.1000558,
+          24.8651188,
+          60.3384849
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "assets": {
+    "luonnonsuojelualue": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/luonnonsuojelualue/luonnonsuojelualue.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "iceberg": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v3/protected",
+      "type": "application/x-iceberg",
+      "roles": [
+        "data"
+      ],
+      "title": "Apache Iceberg table v3.protected \u2014 iceberg_scan() or ATTACH the catalog_uri"
+    }
+  },
+  "title": "Protected nature areas",
+  "keywords": [
+    "protected areas",
+    "nature conservation",
+    "environment"
+  ],
+  "git:edit_url": "https://github.com/jatorre/portolan-nls-catalog/edit/main/luonnonsuojelualue/collection.json",
+  "iceberg:catalog_type": "rest",
+  "iceberg:catalog_uri": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog",
+  "iceberg:table_id": "v3.protected",
+  "iceberg:current_snapshot_id": 1780392386294
+}

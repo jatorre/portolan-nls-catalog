@@ -1,0 +1,99 @@
+{
+  "type": "Collection",
+  "id": "sahkolinja",
+  "stac_version": "1.1.0",
+  "description": "High-voltage overhead power lines (NLS Topographic Database).",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.maanmittauslaitos.fi/",
+      "type": "text/html",
+      "title": "National Land Survey of Finland (Maanmittauslaitos) (source)"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/table/v1.2.0/schema.json",
+    "https://portolan-sdi.github.io/stac-iceberg-extension/v1.0.0/schema.json"
+  ],
+  "geoparquet:geometry_type": "LineString",
+  "geoparquet:feature_count": 513,
+  "table:row_count": 513,
+  "table:primary_geometry": "geom",
+  "table:columns": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "kohderyhma",
+      "type": "int32"
+    },
+    {
+      "name": "kohdeluokka",
+      "type": "int32"
+    },
+    {
+      "name": "geom",
+      "type": "binary"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          24.4436676,
+          60.1170395,
+          24.8532724,
+          60.3282558
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "assets": {
+    "sahkolinja": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/sahkolinja/sahkolinja.parquet",
+      "type": "application/x-parquet",
+      "roles": [
+        "data"
+      ]
+    },
+    "iceberg": {
+      "href": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog/data/v3/power_lines",
+      "type": "application/x-iceberg",
+      "roles": [
+        "data"
+      ],
+      "title": "Apache Iceberg table v3.power_lines \u2014 iceberg_scan() or ATTACH the catalog_uri"
+    }
+  },
+  "title": "Electricity transmission lines",
+  "keywords": [
+    "electricity transmission",
+    "power grid",
+    "energy infrastructure"
+  ],
+  "git:edit_url": "https://github.com/jatorre/portolan-nls-catalog/edit/main/sahkolinja/collection.json",
+  "iceberg:catalog_type": "rest",
+  "iceberg:catalog_uri": "https://8et4c.upcloudobjects.com/carto-ogc-connect-helsinki/repo/portolan-nls-catalog",
+  "iceberg:table_id": "v3.power_lines",
+  "iceberg:current_snapshot_id": 1780392386289
+}

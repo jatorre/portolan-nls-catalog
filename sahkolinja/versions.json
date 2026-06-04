@@ -1,0 +1,22 @@
+{
+  "spec_version": "1.0.0",
+  "current_version": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "created": "2026-06-04T08:27:15.991966Z",
+      "breaking": false,
+      "assets": {
+        "sahkolinja.parquet": {
+          "sha256": "e112c7ffb5f031ae1d1fcf43fb78635d3f24f8011e0888d01dec7e5ac020c9ad",
+          "size_bytes": 37173,
+          "href": "sahkolinja/sahkolinja.parquet",
+          "mtime": 1780561620.296561
+        }
+      },
+      "changes": [
+        "sahkolinja.parquet"
+      ]
+    }
+  ]
+}
